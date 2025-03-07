@@ -8,40 +8,69 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
     <title>Ayush Khatri | Software Developer</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
             font-family: "Fira Code", monospace;
             text-align: center;
             background-color: #000;
             color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
         }
-        #root{
-            margin-bottom: 10rem;
+
+        #root {
+            width: 100%;
+            max-width: 600px; /* Keeps text readable on large screens */
         }
+
+        h2 {
+            font-size: 8vw; /* Responsive font size */
+        }
+
         p {
-            font-size: 18px;
+            font-size: 5vw; /* Responsive text */
             margin: 10px 0;
         }
+
         a {
-            font-size: 18px;
+            font-size: 5vw; /* Ensures links scale well */
             text-decoration: none;
             color: #0073e6;
             font-weight: bold;
-            margin: 0 10px;
+            display: inline-block;
+            margin: 10px;
         }
+
         a:hover {
             text-decoration: underline;
+        }
+
+        @media (min-width: 768px) {
+            h2 {
+                font-size: 32px;
+            }
+            p, a {
+                font-size: 20px;
+            }
         }
     </style>
 </head>
 <body>
     <div id="root">
-    <h2>Hey, I'm Ayush Khatri | Software Developer</h2>
-    <p><b>Building things on the internet ⚡</b></p>
-    <p>
-        <a href="https://ayushkhatri.site">Website</a> |
-        <a href="https://ayush-khatrii.github.io/resume.pdf">Resume</a>
-    </p>
+        <h2>Hey, I'm Ayush Khatri | Software Developer</h2>
+        <p><b>Building things on the internet ⚡</b></p>
+        <p>
+            <a href="https://ayushkhatri.site">Website</a> |
+            <a href="https://ayush-khatrii.github.io/resume.pdf">Resume</a>
+        </p>
     </div>
-
 </body>
 </html>
